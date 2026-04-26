@@ -4,59 +4,61 @@
 [![Go Version](https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat&logo=go)](https://golang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org/)
 
-**Pantau Gizi** adalah platform independen berbasis masyarakat untuk memantau, melaporkan, dan mengevaluasi kualitas program Makan Bergizi Gratis (MBG) di Indonesia. Kami menggunakan teknologi untuk menciptakan transparansi dan memastikan hak gizi anak-anak terpenuhi secara adil dan berkualitas.
+**Semantic Pantau Gizi** adalah platform independen berbasis masyarakat untuk memantau, melaporkan, dan mengevaluasi kualitas program Makan Bergizi Gratis (MBG) di Indonesia. Kami menggabungkan kekuatan **komunitas open-source** dan **kecerdasan buatan (AI)** untuk menciptakan transparansi radikal demi gizi anak bangsa yang lebih baik.
 
 ---
 
-## 🌟 Kenapa Berkontribusi di Sini? (Benefits)
+## 🌟 Mengapa Bergabung dengan Proyek Ini?
 
-Bergabung dengan proyek open-source bukan hanya soal menulis kode, tapi juga investasi untuk karier Anda:
+Kami percaya bahwa transparansi sejati hanya bisa dicapai jika kodenya dapat diaudit oleh publik. Bergabung di sini berarti:
 
-1. **Elite Tech-Stack Portfolio:** Tunjukkan kemampuan Anda dalam menangani arsitektur modern (*Go, Redis, Cloudflare R2, Next.js*). Ini adalah nilai jual tinggi di hadapan rekruter perusahaan teknologi besar.
-2. **Real-World Experience:** Hadapi tantangan nyata seperti *high-concurrency*, *presigned-URL implementation*, dan optimasi infrastruktur biaya rendah.
-3. **Social Impact:** Kontribusi Anda berdampak langsung pada pengawasan gizi jutaan anak sekolah di Indonesia. Kode Anda adalah solusi sosial.
-4. **Networking:** Terhubung dengan sesama engineer yang memiliki visi yang sama.
-5. **Future Opportunities:** Proyek ini dikelola secara profesional. Kontributor utama akan menjadi prioritas jika proyek ini mendapatkan pendanaan, hibah, atau bertransformasi menjadi entitas yang lebih besar.
+1. **Elite Tech-Stack Portfolio:** Implementasi nyata arsitektur modern (*Go, Redis, Cloudflare R2, Next.js*). Ini adalah aset berharga untuk portofolio di level perusahaan Big Tech.
+2. **AI-Driven Impact:** Terlibat dalam pengembangan Phase 3—otomasi validasi gizi menggunakan *Computer Vision*.
+3. **Radical Transparency:** Berbeda dengan platform tertutup, di sini setiap baris kode berkontribusi pada akuntabilitas publik yang bisa dipertanggungjawabkan.
+4. **Professional Networking:** Berkolaborasi dengan sesama engineer yang visioner dan peduli pada isu sosial-nasional.
+5. **Future Priorities:** Kontributor inti (Core Contributors) akan menjadi prioritas utama jika proyek ini berkembang menjadi entitas formal atau menerima dukungan hibah/investasi.
 
 ---
 
 ## 🚀 Key Engineering Features
 
-Proyek ini dibangun dengan prinsip **High Performance** dan **Low Cost Operations**.
+Didesain untuk **High Performance** dengan **Low Cost Operations**:
 
-- **Hybrid Infrastructure:** Memadukan VPS untuk *Compute* dan Serverless untuk *Data/Storage*.
-- **Zero-Load File Upload:** Implementasi **S3 Presigned URLs** via Cloudflare R2. Server tidak pernah memproses data biner gambar, menjaga kestabilan RAM VPS.
-- **Atomic Caching:** Menggunakan Redis untuk dashboard publik agar tetap responsif meskipun diakses ribuan pengguna secara bersamaan.
-- **Efficient Deployment:** Full Dockerized environment untuk kemudahan *scaling* dan *maintenance*.
+- **Hybrid Infrastructure:** Optimasi biaya menggunakan VPS untuk *Compute* dan Serverless untuk *Data/Storage*.
+- **Zero-Load File Upload:** Menggunakan **S3 Presigned URLs** (Cloudflare R2). Backend tidak memproses file biner, menghemat RAM dan CPU secara signifikan.
+- **Atomic Caching:** Redis digunakan untuk menyajikan data agregat secara real-time tanpa membebani PostgreSQL.
+- **Client-Side Edge Optimization:** Kompresi gambar otomatis di sisi client sebelum upload untuk efisiensi bandwidth.
 
 ## 🛠 Tech Stack
 
 - **Backend:** [Go (Golang)](https://go.dev/)
-- **Frontend:** [Next.js](https://nextjs.org/) (PWA)
+- **Frontend:** [Next.js](https://nextjs.org/) (PWA Ready)
 - **Database:** [PostgreSQL](https://www.postgresql.org/)
 - **Cache:** [Redis](https://redis.io/)
-- **Storage:** [Cloudflare R2](https://www.cloudflare.com/lp/pg-storage-r2/)
+- **Storage:** [Cloudflare R2](https://www.cloudflare.com/developer-platform/products/r2/)
 - **Infrastructure:** Docker & Docker Compose
 
 ## 🏗 System Architecture & Spec
 
-Detail spesifik mengenai alur data dan kebutuhan teknis dapat dilihat pada [Technical Requirements Document (TRD)](/docs/TRD.md).
+Cetak biru sistem, alur data, dan standar koding dapat diakses di [Technical Requirements Document (TRD)](/docs/TRD.md).
 
 ## 📈 Roadmap
 
-- [ ] **Phase 1:** MVP (Laporan, Foto, Rating, Dashboard Dasar).
-- [ ] **Phase 2:** Peta Geospasial Nasional & Analisis Wilayah.
-- [ ] **Phase 3:** AI-Powered Image Verification (Deteksi komponen makanan otomatis).
+- [x] **Phase 0:** Inisialisasi Boilerplate & Dokumen Arsitektur.
+- [ ] **Phase 1 (MVP):** Sistem Laporan, Rating Sekolah, & Dashboard Dasar.
+- [ ] **Phase 2 (Analytics):** Peta Geospasial Nasional & Analitik Wilayah Terpadu.
+- [ ] **Phase 3 (AI Integration):** Implementasi **Computer Vision** untuk deteksi otomatis komponen makanan (nasi, protein, sayur) guna validasi standar gizi secara otomatis dan masif.
 
 ## 🤝 Cara Berkontribusi
 
+Kami menyukai kolaborasi! Silakan mulai dengan:
 1. Fork repository ini.
-2. Pilih task pada menu [Issues](https://github.com/mhdarifsetiawan/semantic-pantau-gizi/issues).
-3. Buat branch baru dan kirim Pull Request (PR).
+2. Cari tugas yang tersedia di [Issues](https://github.com/mhdarifsetiawan/semantic-pantau-gizi/issues).
+3. Buat branch baru, koding, dan kirim Pull Request (PR).
 
-## 💰 Dukung Kami (Donasi & Kemitraan)
+## 💰 Dukungan & Kemitraan
 
-Kami berkomitmen menjaga proyek ini tetap independen. Dukungan finansial Anda akan digunakan sepenuhnya untuk biaya infrastruktur server dan pengembangan fitur.
+Kami menjaga independensi dengan model pendanaan berbasis komunitas. Dukungan Anda membantu biaya operasional server dan infrastruktur.
 
 - **Donasi via Saweria:** [saweria.co/mhdarifsetiawan](https://saweria.co/mhdarifsetiawan)
 - **Email Kontak:** [mhdarifsetiawan01@gmail.com](mailto:mhdarifsetiawan01@gmail.com)
@@ -65,7 +67,7 @@ Kami berkomitmen menjaga proyek ini tetap independen. Dukungan finansial Anda ak
 
 ## 📄 Lisensi
 
-Proyek ini berada di bawah lisensi **MIT**.
+Proyek ini dilisensikan di bawah **MIT License**.
 
 ---
-*Dibuat dengan ❤️ untuk masa depan Indonesia yang lebih sehat dan transparan.*
+*Membangun teknologi untuk Indonesia yang lebih sehat, transparan, dan cerdas.*
